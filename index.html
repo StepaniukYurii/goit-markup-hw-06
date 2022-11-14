@@ -35,13 +35,13 @@
                 <ul class="ul header-contact-list">
                     <li>
                         <a class="header-contact-link nav-link" href="mailto:info@devstudio.com">
-                            <svg class="hedder-contact-icon">
+                            <svg class="hedder-contact-icon-envelope">
                             <use href="./images/icons.svg#icon-envelope"></use>
                             </svg>info@devstudio.com</a>
                     </li>
                     <li>
                         <a class="header-contact-link nav-link" href="tel:+380961111111">
-                            <svg class="hedder-contact-icon">
+                            <svg class="hedder-contact-icon-smartphone">
                             <use href="./images/icons.svg#icon-smartphone"></use>
                             </svg>+38 096 111 11 11</a>
                     </li>
@@ -266,13 +266,61 @@
                         <svg class="footer-icon"><use href="./images/icons.svg#icon-linkedin"></use></svg></a></li>
                 </ul>
             </div>
+            <div class="subscribe-wrapper">
+                <h3 class="tittle-subscribe">Підпишіться на розсилку</h3>
+                <form action="">
+                    <label for="">
+                        <input class="foter-subscribe" type="email" name="" placeholder="E-mail">
+                    </label>
+                    <button type="button" class="btn-subscribe">Підписатися
+                        <svg class="subscribe-icon"><use href="./images/icons.svg#icon-send"></use></svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
     <div data-modal class="modal-section is-hidden">
         <div class="modal-window">
             <div class="modal-close">
-                <button data-modal-close type="button" class="btn-close"><svg class="modal-icon"><use href="./images/icons.svg#icon-vector"></use></svg></button>
+                <button data-modal-close type="button" class="btn-close"><svg class="modal-icon"><use href="./images/icons.svg#icon-cross"></use></svg></button>
             </div>
+            <h2 class="modal-tittle">Залиште свої дані, ми вам передзвонимо</h2>
+            <form class="form-modal" action="">
+                <label class="label-modal" for="">
+                    <p class="login-text">Ім'я</p>
+                    <div class="modal-box">
+                        <input class="login-field" type="text">
+                        <svg class="modal-name-icon"><use href="./images/icons.svg#icon-name-login"></use></svg>
+                    </div>
+                </label>
+                <label class="label-modal" for="">
+                    <p class="login-text">Телефон</p>
+                    <div class="modal-box">
+                        <input class="login-field" type="text">
+                        <svg class="modal-name-icon">
+                            <use href="./images/icons.svg#icon-call-login"></use>
+                        </svg>
+                    </div>
+                </label>
+                <label class="label-modal" for="">
+                    <p class="login-text">Пошта</p>
+                    <div class="modal-box">
+                        <input class="login-field" type="text">
+                        <svg class="modal-name-icon">
+                            <use href="./images/icons.svg#icon-mail-login"></use>
+                        </svg>
+                    </div>
+                </label>
+                <label class="label-modal" for="">
+                    <p class="login-text">Коментар</p>
+                    <textarea class="login-field-textarea" name="feedback" placeholder="Введіть текст"></textarea>
+                </label>
+                <label class="label-modal agreemetn-box" for="">
+                    <input class="chek-form" type="checkbox">
+                    <p class="agreement-text">Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></p>
+                </label>
+                <button class="btn-sending" type="button">Відправити</button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>

@@ -125,10 +125,16 @@ p {
   text-decoration: none;
   color: var(--text-color);
 }
-.hedder-contact-icon {
+.hedder-contact-icon-envelope {
   fill: currentColor;
   width: 16px;
   height: 12px;
+  margin-right: 10px;
+}
+.hedder-contact-icon-smartphone {
+  fill: currentColor;
+  width: 10px;
+  height: 16px;
   margin-right: 10px;
 }
 .hero-section {
@@ -530,7 +536,50 @@ p {
   height: 20px;
   fill: var(--background-color);
 }
-
+.subscribe-wrapper {
+  margin-left: 93px;
+}
+.tittle-subscribe {
+  margin-bottom: 20px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--background-color);
+}
+.foter-subscribe {
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+}
+.btn-subscribe {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+  padding: 10px 28px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--background-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-style: hidden;
+  cursor: pointer;
+}
+.subscribe-icon {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  margin-left: 10px;
+}
 .modal-section {
   position: fixed;
   align-items: center;
@@ -551,6 +600,8 @@ p {
   visibility: hidden;
 }
 .modal-window {
+  padding-left: 40px;
+  padding-right: 40px;
   position: relative;
   width: 528px;
   height: 581px;
@@ -578,8 +629,99 @@ p {
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
+.modal-close:hover {
+  color: var(--accent-color);
+}
 .modal-icon {
   width: 11px;
   height: 11px;
   fill: black;
+}
+.modal-tittle {
+  margin-top: 40px;
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.login-text {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--text-color);
+}
+.modal-box {
+  margin-bottom: 58px;
+  position: relative;
+}
+.modal-box:hover,
+.modal-box:focus {
+  fill: var(--accent-color);
+}
+.login-field:hover,
+.login-field:focus {
+  border-color: var(--accent-color);
+}
+.login-field {
+  position: absolute;
+  padding: 12px 42px;
+  height: 40px;
+  width: 448px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.modal-name-icon {
+  top: 11px;
+  left: 12px;
+  position: absolute;
+  height: 18px;
+  width: 18px;
+}
+.login-field-textarea {
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  width: 448px;
+  height: 120px;
+  resize: none;
+}
+.login-field-textarea:hover,
+.login-field-textarea:focus {
+  border-color: var(--accent-color);
+}
+.agreemetn-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chek-form {
+  margin-top: 20px;
+  margin-right: 8px;
+  width: 16px;
+  height: 15px;
+  border-color: #212121;
+}
+.agreement-text {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--text-color);
+}
+.modal-tick-icon {
+  width: 8px;
+  height: 11px;
+}
+.btn-sending {
+  margin: 0 auto;
+  display: block;
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  margin-top: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 52px;
+  border-style: none;
+  cursor: pointer;
 }
