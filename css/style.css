@@ -545,7 +545,7 @@ p {
   text-transform: uppercase;
   color: var(--background-color);
 }
-.foter-subscribe {
+.footer-subscribe {
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -555,14 +555,20 @@ p {
   height: 50px;
   font-size: 16px;
   line-height: 1.25;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--background-color);
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.foter-subscribe:hover,
-.foter-subscribe:focus {
+.footer-subscribe:hover,
+.footer-subscribe:focus {
   border-color: var(--accent-color);
+}
+.footer-subscribe::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-size: 16px;
+  line-height: 1.25;
 }
 .btn-subscribe {
   display: inline-flex;
