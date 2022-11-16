@@ -718,6 +718,10 @@ p {
   height: 120px;
   padding: 12px 16px;
 }
+.comment-modal:hover,
+.comment-modal:focus {
+  border-color: var(--accent-color);
+}
 .comment-modal::placeholder {
   font-size: 12px;
   line-height: 1.16;
