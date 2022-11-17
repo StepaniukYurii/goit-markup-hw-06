@@ -750,6 +750,7 @@ p {
   height: 15px;
   border: 2px solid;
   border-radius: 2px;
+  border-color: #000000;
 }
 .terms-contract {
   margin-left: 4px;
