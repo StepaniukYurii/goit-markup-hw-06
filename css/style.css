@@ -30,7 +30,8 @@ p {
   padding: 0;
 }
 :focus {
-  outline: 3px double var(--accent-color);
+  outline: 1px solid var(--accent-color);
+  border-radius: 3px;
 }
 .container {
   width: 1200px;
